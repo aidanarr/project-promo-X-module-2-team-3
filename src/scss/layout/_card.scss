@@ -1,12 +1,28 @@
+
 .card-section {
     background-image: linear-gradient(#bfcdd0, #dde9ed);
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
 }
 
 .reset {
     width: 75px;
-    padding-top: 30px;
-    margin-left: 45px;
+    margin-top: 30px;
+    padding: 6px;
+    font-size: 12px;
+    border-radius: 15px;
+    border: solid 1px white;
+    text-align: center;
+    color: #54585a;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+        color: $blue;
+    }
 }
 
 .card {
@@ -14,8 +30,6 @@
     width: 240px;
     font-family: $card-font;
     margin-top: 20px;
-    margin-left: 45px;
-    margin-right: 35px;
     padding-top: 21px;
     display: flex;
     flex-direction: column;
@@ -53,13 +67,26 @@
         padding-bottom: 12px;
         padding-top: 10px;
         display: flex;
+        justify-content: flex-start;
         gap: 10px;
         
         &--icon {
+            text-align: center;
+            text-decoration: none;
+            display: block;
             width: 32px;
             height: 32px;
             border: solid 2px $Green;
             border-radius: 100px;
+            color: $dark-blue;
+
+            i {
+                margin-top: 25%;
+            }
+
+            &:hover {
+                color: $Green;
+            }
         }
     }
 }
