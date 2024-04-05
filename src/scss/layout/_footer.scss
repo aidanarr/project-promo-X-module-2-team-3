@@ -1,11 +1,27 @@
 .footer{
+    height: 20vh;
+    border-top: 1px solid #d8d8d8;
+
     display: flex;
     flex-direction: column;
+    justify-content:flex-end;
     align-items: center;
+    gap: 12px;
+    &__copyright{
+        margin-top: 18px;
+        color: #6b6b6b;
+        opacity: 0.5;
+    }
+    &__div{
+        &--logo{
+            width: 100px;
+        }
+    }
 
     @media screen and (width >= 768px) {
         flex-direction: row;
         justify-content: space-between;
         
     }
+
 }
