@@ -1,0 +1,17 @@
+.landing {
+  height: 80vh;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__articles{
+    display: flex;
+
+    &--art{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+}
