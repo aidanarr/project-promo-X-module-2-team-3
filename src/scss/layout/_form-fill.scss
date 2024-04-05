@@ -2,19 +2,33 @@
     padding: 20px;
     border: none;
     width: 100vw;
+    font-size: 1.4rem;
 
     @media (width > 768px){
         width: 50vw;
     }
 
+    &__text{
+        font-weight: bold;
+        color: $metal
+    }
     &__inputs{
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    & input{
+        height: 30px;
+        border: $Green 1px solid;
+    }
+
+    & ::placeholder{
+        padding-left: 10px;
+    }
 }
 
     &__icon{
-        color: orange;
+        color: $orange;
         padding-right: 10px;
     }
 
@@ -23,7 +37,7 @@
 
     }
     & a{
-        background-color: orange;
+        background-color: $orange;
         color: white;
         border-radius: 5px;
         text-decoration: none;

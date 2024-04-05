@@ -5,13 +5,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 12px;
+&__title{
+    font-family: $title-font;
+    font-weight: 900;
+    color: $orange;
+}
 
   &__articles{
+    border: 1px solid $orange;
+    padding: 10px 20px;
     display: flex;
+    gap: 24px;
 
     &--art{
+
         display: flex;
         flex-direction: column;
+        .landing__icon{
+            color: $orange;
+            font-size: 30px;
+            //Seguir cambiando esto de los tamaños y la landing en general
+        }
     }
   }
 }
