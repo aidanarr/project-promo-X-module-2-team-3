@@ -1,0 +1,35 @@
+.fill{
+    padding: 20px;
+    border: none;
+    width: 100vw;
+
+    @media (width > 768px){
+        width: 50vw;
+    }
+
+    &__inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+    &__icon{
+        color: orange;
+        padding-right: 10px;
+    }
+
+    &__icon--down{
+        color: grey;
+
+    }
+    & a{
+        background-color: orange;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        width: 150px;
+        padding: 3px 20px;
+        text-align: center;
+    }
+
+}

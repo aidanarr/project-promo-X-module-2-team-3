@@ -1,0 +1,65 @@
+.card-section {
+    background-image: linear-gradient(#bfcdd0, #dde9ed);
+    padding-bottom: 40px;
+}
+
+.reset {
+    width: 75px;
+    padding-top: 30px;
+    margin-left: 45px;
+}
+
+.card {
+    background-color: white;
+    width: 240px;
+    font-family: $card-font;
+    margin-top: 20px;
+    margin-left: 45px;
+    margin-right: 35px;
+    padding-top: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+
+    &__text {
+        border-left: solid 5px $blue;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 10px;
+
+        &--name {
+            font-size: 18px;
+            font-weight: bold;
+            color: $dark-blue;
+        }
+
+        &--subtitle {
+            font-size: 16px;
+            font-weight: normal;
+            color: #54585a;
+        }
+    }
+
+    &__pic {
+        max-height: 340px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    } 
+
+    &__socials {
+        padding-left: 20px;
+        padding-bottom: 12px;
+        padding-top: 10px;
+        display: flex;
+        gap: 10px;
+        
+        &--icon {
+            width: 32px;
+            height: 32px;
+            border: solid 2px $Green;
+            border-radius: 100px;
+        }
+    }
+}
