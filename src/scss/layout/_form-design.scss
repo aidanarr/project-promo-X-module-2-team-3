@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.desing{
+.desing__text{
     padding: 20px;
     border: none;
     width: 100vw;
@@ -14,4 +14,29 @@
     }
     
 }
-s
+.icon{
+    color: $orange;
+    padding-right: 10px;
+}
+.desing{
+    border: none;
+    padding:20px;
+    margin-top: 27px;
+    margin-left:30px ;
+    
+    font-size: 1.4rem;
+}
+.text{
+    color: $metal;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+
+    
+}
+.inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+
+}
