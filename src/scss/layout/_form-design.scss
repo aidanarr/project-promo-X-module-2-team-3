@@ -6,10 +6,14 @@
     box-sizing: border-box;
 }
 
-
+.desing{
+    height:224px ;
+}
 
 
 .text{
+    color: $metal;
+    font-weight: bold;
     
     border: none;
     padding:20px;
@@ -34,30 +38,24 @@
 }
 
 
-.text{
-  
-    margin-left: 10px;
-    color: $metal;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 5px;
-    line-height: 10px;
 
-
-}
 .tit{
     color: $metal;
-    padding: 30px;
+    padding:5px;
     font-size: 15px;
+    margin-left: 50px;
+    margin-top: 10px;
 }
 .listas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
+  
     list-style: none;
     align-items: center;
-    align-items: start;
-    margin-left: 30%;
-    padding: 27px;
+   
+   
+    margin-left: 55%;
+   
     
   
 
@@ -67,6 +65,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     list-style: none;
     align-items: center;
+    
 
 
 } 
@@ -74,13 +73,17 @@
    display: flex;
    flex-direction: column;
     list-style: none;
-    background-color: aqua;
+   
+    padding: 20px;
+ row-gap: 20px;
+
 }
 .paleta{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    
     list-style: none;
-    background-color: burlywood;
+  
+    
     
     
     
@@ -88,8 +91,71 @@
 }
 .div{
     display: flex;
+    flex-direction: column;
     list-style: none;
-    background-color: burlywood;
+   
+    row-gap: 15px;
+  
     
+}
+.a1{
+    display: flex;
     
+
+}
+.a1-1{
+    
+    background-color:#114e4e ;
+    width:30px ;
+    height: 25px;
+}
+.a1-2{
+    width:30px ;
+    height: 25px;
+    background-color:#438792;
+}
+.a1-3{
+    width:30px ;
+    height: 25px;
+    background-color:#a2deaf;
+}
+.a2{
+    display: flex;
+
+}
+.a2-1{
+    
+    background-color:#420101;
+    width:30px ;
+    height: 25px;
+}
+.a2-2{
+    width:30px ;
+    height: 25px;
+    background-color:#bd1010;
+}
+.a2-3{
+    width:30px ;
+    height: 25px;
+    background-color:#e95626;
+}
+.a3{
+    display: flex;
+
+}
+.a3-1{
+    
+    background-color:#3e5b654e ;
+    width:30px ;
+    height: 25px;
+}
+.a3-2{
+    width:30px ;
+    height: 25px;
+    background-color:#eab052;
+}
+.a3-3{
+    width:30px ;
+    height: 25px;
+    background-color:#a0c0cf;
 }
