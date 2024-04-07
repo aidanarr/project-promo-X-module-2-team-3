@@ -21,6 +21,7 @@
 }
 
 
+
 .text{
     color: $metal;
     font-weight: bold;
@@ -150,4 +151,14 @@
     width:30px ;
     height: 25px;
     background-color:#a0c0cf;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #b9b3b3;
+    margin-inline-start: 20px;
+    gap: 10px;
+    
+    
 }
