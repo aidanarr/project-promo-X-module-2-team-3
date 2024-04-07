@@ -14,7 +14,6 @@
 .text{
     color: $metal;
     font-weight: bold;
-    
     border: none;
     padding:20px;
     margin-top: 27px;
@@ -38,7 +37,6 @@
 }
 
 
-
 .tit{
     color: $metal;
     padding:5px;
@@ -49,16 +47,10 @@
 .listas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-  
     list-style: none;
     align-items: center;
-   
-   
     margin-left: 55%;
    
-    
-  
-
 }
 .inputs{
     display: grid;
@@ -70,30 +62,22 @@
 
 } 
 .colors{
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
     list-style: none;
-   
     padding: 20px;
- row-gap: 20px;
+    row-gap: 20px;
 
 }
 .paleta{
     display: grid;
-    
     list-style: none;
-  
-    
-    
-    
-    
     
 }
 .div{
     display: flex;
     flex-direction: column;
     list-style: none;
-   
     row-gap: 15px;
   
     

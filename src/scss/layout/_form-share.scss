@@ -1,0 +1,53 @@
+.comparte{
+height: 100vw;
+border: none;
+display: flex;
+flex-direction: column;
+padding: 20px;
+
+}
+.share{
+    width: 96px;
+    height: 24px;
+    font-family: var($main-font);
+    font-size: 15px;
+    color: $metal;
+    padding: 20px;
+    width: 100vw;
+    font-weight: bold;
+    padding: 10px;
+}
+.tarjet{
+    padding: 20px;
+    margin-left:15%;
+    
+}
+
+
+    .enlace1{
+    width: 200px;
+    height: 70px;
+    background-color:$orange;
+    border-radius: 15px;
+    padding:20px;
+    text-align: center;
+    font-size:19px;
+
+}
+.enl{
+    text-decoration: none;
+    color: white;
+    font-family: var($main-font);
+  
+}
+.crear{
+    padding: 20px ;
+    padding-left: 41px;
+    padding-right: 40px;
+    display:block;
+    text-align: center;
+   
+    font-family: var($main-font);
+    color: $metal;
+    
+}
