@@ -1,9 +1,26 @@
 .comparte{
-height: 100vw;
+width: 100vw;
 border: none;
 display: flex;
 flex-direction: column;
 padding: 20px;
+
+@media (width > 768px){
+    width: 50vw;
+
+    .enlace1{
+        background-color: rgb(200, 195, 195);
+    }
+    .btn{
+        width: 181px;
+        height: 30px;
+        font-size: 14px;
+        text-align: center;
+        padding: 20px;
+    }
+
+}
+
 
 }
 .share{
@@ -16,22 +33,28 @@ padding: 20px;
     width: 100vw;
     font-weight: bold;
     padding: 10px;
+    
+    
 }
+
+
 .tarjet{
     padding: 20px;
-    margin-left:15%;
+    margin-left: 40px;
+    color: white;
+  
     
 }
 
 
     .enlace1{
-    width: 200px;
-    height: 70px;
+    width: 199px;
+    height: 50px;
     background-color:$orange;
-    border-radius: 15px;
+    border-radius: 12px;
     padding:20px;
     text-align: center;
-    font-size:19px;
+    font-size:18px;
 
 }
 .enl{
@@ -41,13 +64,46 @@ padding: 20px;
   
 }
 .crear{
-    padding: 20px ;
-    padding-left: 41px;
-    padding-right: 40px;
-    display:block;
-    text-align: center;
-   
+    display:flex;
+    flex-direction: column;
+    margin-left:25px;
     font-family: var($main-font);
     color: $metal;
+    
+}
+p{
+    font-size: 18px;
+    font-family: var($main-font);
+    font-weight:500;
+    color: $metal;
+    padding: 20px;
+    width: 100vw;
+    word-spacing: 5px;
+
+}
+
+.enl2{
+    color: $orange;
+    font-size: 13px;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+.btn{
+    
+    width:250px ;
+    height: 60px;
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+    border: none;
+    background-color:#33B5FF;
+    margin-left:15%;
+    border-radius: 10px;
+}
+.enlace{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  
     
 }
