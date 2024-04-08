@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,13 +7,46 @@
 }
 
 .desing__text{
+    width: 100vw;
+    border: none;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     border: none;
     width: 100vw;
     font-size: 1.4rem;
+.desing{
+    width: 100vw;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+
     @media (width > 768px){
         width: 50vw;
     }
+
+}
+
+
+
+.text{
+    color: $metal;
+    font-weight: bold;
+    border: none;
+    padding:20px;
+    font-size:15px;
+    border: none;
+    width: 100vw;
+    font-size: 15px ;
+
+
+}
+.icon{
+    color: $orange;
+    padding-right: 10px;
+    
     
 }
 .icon{
@@ -39,4 +74,125 @@
     grid-template-columns: 1fr 1fr 1fr;
     
 
+
+
+.tit{
+    color: $metal;
+    font-size: 15px;
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 18px;
+ 
+    
+}
+.listas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    list-style: none;
+    align-items: center;
+    margin-left: 45%;
+   
+}
+.inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    list-style: none;
+    align-items: center;
+  
+  
+    
+
+
+} 
+.colors{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 20px;
+    row-gap: 20px;
+
+}
+.paleta{
+    display: grid;
+    list-style: none;
+    
+}
+.div{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    row-gap: 15px;
+  
+    
+}
+.a1{
+    display: flex;
+    
+
+}
+.a1-1{
+    
+    background-color:#114e4e ;
+    width:30px ;
+    height: 25px;
+}
+.a1-2{
+    width:30px ;
+    height: 25px;
+    background-color:#438792;
+}
+.a1-3{
+    width:30px ;
+    height: 25px;
+    background-color:#a2deaf;
+}
+.a2{
+    display: flex;
+
+}
+.a2-1{
+    
+    background-color:#420101;
+    width:30px ;
+    height: 25px;
+}
+.a2-2{
+    width:30px ;
+    height: 25px;
+    background-color:#bd1010;
+}
+.a2-3{
+    width:30px ;
+    height: 25px;
+    background-color:#e95626;
+}
+.a3{
+    display: flex;
+
+}
+.a3-1{
+    
+    background-color:#3e5b654e ;
+    width:30px ;
+    height: 25px;
+}
+.a3-2{
+    width:30px ;
+    height: 25px;
+    background-color:#eab052;
+}
+.a3-3{
+    width:30px ;
+    height: 25px;
+    background-color:#a0c0cf;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #b9b3b3;
+    margin-inline-start: 20px;
+    gap: 10px;
+    
+    
 }
