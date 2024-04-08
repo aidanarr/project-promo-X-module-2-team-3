@@ -6,16 +6,6 @@
     box-sizing: border-box;
 }
 
-.desing__text{
-    width: 100vw;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    border: none;
-    width: 100vw;
-    font-size: 1.4rem;
-}
 .desing{
     width: 100vw;
     border: none;
@@ -50,32 +40,6 @@
     
     
 }
-.icon{
-    color: $orange;
-    padding-right: 10px;
-}
-.desing{
-    border: none;
-    padding:20px;
-    margin-top: 27px;
-    margin-left:30px ;
-    
-    font-size: 1.4rem;
-}
-.text{
-    color: $metal;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 5px;
-
-    
-}
-.inputs{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-    
-
 
 
 .tit{
@@ -196,4 +160,5 @@ hr{
     margin-inline-start: 20px;
     gap: 10px;
     
-} 
+    
+}

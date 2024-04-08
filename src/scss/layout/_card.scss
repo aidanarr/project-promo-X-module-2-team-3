@@ -6,22 +6,13 @@
     flex-direction: column;
     justify-content: left;
     align-items: center;
-
-    @media (width > 768px) {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-right: 40px;
-        border-radius: 6px;
-    }
 }
 
 .reset {
     width: 75px;
     margin-top: 30px;
     padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 15px;
     border: solid 1px white;
     text-align: center;
@@ -32,17 +23,11 @@
     &:hover {
         color: $blue;
     }
-
-    i {
-        padding-right: 8px;
-    }
 }
 
 .card {
     background-color: white;
     width: 240px;
-    border-radius: 2px;
-    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
     font-family: $card-font;
     margin-top: 20px;
     padding-top: 21px;
@@ -96,7 +81,6 @@
             color: $dark-blue;
 
             i {
-                font-size: 18px;
                 margin-top: 25%;
             }
 
