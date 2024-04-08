@@ -13,6 +13,7 @@
         margin-right: 40px;
         border-radius: 6px;
         width: 50vw;
+        justify-content: center;
     }
 }
 
@@ -37,6 +38,11 @@
     i {
         padding-right: 8px;
     }
+
+    @media (width > 768px) {
+        margin-top: 0px;
+    }
+
 }
 
 .card {
