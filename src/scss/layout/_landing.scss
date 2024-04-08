@@ -10,7 +10,7 @@
   padding-right: 30px;
   &__img{
     width: 250px;
-
+//Caaambio
   }
   &__title {
     font-family: $title-font;
@@ -21,13 +21,11 @@
     overflow: wrap;
     text-align: center;
   }
-
   &__articles {
     border: 1px solid $orange;
     padding: 10px 20px;
     display: flex;
     gap: 24px;
-
     &--art {
       display: flex;
       flex-direction: column;
@@ -46,6 +44,5 @@
     margin-top: 16px;
     padding: 10px 20px;
     border-radius: 20px;
-
   }
 }
