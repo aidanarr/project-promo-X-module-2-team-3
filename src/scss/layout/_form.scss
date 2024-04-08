@@ -1,6 +1,9 @@
 .form{
+    width: 100vw;
     @media (width > 768px){
-        width: 50vw;
-        margin-left: 40px;
+        width: 50%;
+    }
+    @media (width > 1024px) {
+        width: 40%;
     }
 }

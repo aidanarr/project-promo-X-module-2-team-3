@@ -1,11 +1,11 @@
 .fill{
     padding: 20px;
     border: none;
-    width: 100vw;
+    width: 100%;
     font-size: 1.4rem;
 
     @media (width > 768px){
-        width: 50vw;
+        width: 50%;
     }
 
     &__text{
