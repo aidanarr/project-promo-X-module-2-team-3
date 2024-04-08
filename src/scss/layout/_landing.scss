@@ -8,35 +8,67 @@
   gap: 16px;
   padding-left: 30px;
   padding-right: 30px;
-  &__img{
-    width: 250px;
-//Caaambio
+
+  @media (width >= 768px) {
+    gap: 0;
+    height: 90vh;
+ 
   }
+  &__img {
+    width: 250px;
+    @media (width >= 768px) {
+      width: 420px;
+    }
+  }
+
   &__title {
     font-family: $title-font;
     font-weight: 900;
     color: $orange;
+    @media (width >= 768px) {
+      font-size: 2.4rem;
+      margin-top: 30px;
+      padding-left: 200px;
+      padding-right: 200px;
+      overflow: wrap;
+      text-align: center;
+    }
   }
-  &__subtitle{
+  &__subtitle {
+    color: $dark-blue;
     overflow: wrap;
     text-align: center;
+    @media (width >= 768px) {
+      padding-left: 190px;
+      padding-right: 190px;
+      padding-top: 0;
+    }
   }
   &__articles {
     border: 1px solid $orange;
     padding: 10px 20px;
     display: flex;
     gap: 24px;
+    @media (width >= 768px) {
+      gap: 50px;
+      padding: 15px 30px 20px 30px;
+      margin-top: 30px;
+    }
     &--art {
+      color: $metal;
       display: flex;
       flex-direction: column;
       align-items: center;
+      @media (width >= 768px) {
+        gap: 5px;
+      }
       .landing__icon {
         color: $orange;
         font-size: 30px;
       }
     }
   }
-  &__button{
+  &__button {
     text-decoration: none;
     text-transform: uppercase;
     background-color: $blue;
@@ -44,5 +76,10 @@
     margin-top: 16px;
     padding: 10px 20px;
     border-radius: 20px;
+    @media (width >= 768px) {
+        position: absolute;
+        bottom: 20%;
+      }
+
   }
 }
