@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.comparte{
+width: 100vw;
+border: none;
+display: flex;
+flex-direction: column;
+padding: 20px;
+
+@media (width > 768px){
+    width: 50vw;
+
+    .enlace1{
+        background-color: rgb(200, 195, 195);
+    }
+    .btn{
+        width: 181px;
+        height: 30px;
+        font-size: 14px;
+        text-align: center;
+        padding: 20px;
+    }
+
+}
+
+
+}
+.share{
+    width: 96px;
+    height: 24px;
+    font-family: var($main-font);
+    font-size: 15px;
+    color: $metal;
+    padding: 20px;
+    width: 100vw;
+    font-weight: bold;
+    padding: 10px;
+    
+    
+}
+
+
+.tarjet{
+    padding: 20px;
+    margin-left: 40px;
+    color: white;
+  
+    
+}
+
+
+    .enlace1{
+    width: 199px;
+    height: 50px;
+    background-color:$orange;
+    border-radius: 12px;
+    padding:20px;
+    text-align: center;
+    font-size:18px;
+    margin-left:px;
+
+}
+.enl{
+    text-decoration: none;
+    color: white;
+    font-family: var($main-font);
+  
+}
+.crear{
+    display:flex;
+    flex-direction: column;
+    margin-left:25px;
+    font-family: var($main-font);
+    color: $metal;
+    width: 100vw;
+    
+}
+p{
+    font-size: 18px;
+    font-family: var($main-font);
+    font-weight:500;
+    color: $metal;
+    padding: 20px;
+    width: 100vw;
+    word-spacing: 5px;
+
+}
+
+.enl2{
+    color: $orange;
+    font-size: 13px;
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+.enl3{
+    text-decoration: none;
+    width:250px ;
+    height: 60px;
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+    border: none;
+    background-color:#33B5FF;
+    margin-left:5%;
+    border-radius: 12px;
+}
+.enlace{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  
+    
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #b9b3b3;
+    margin-inline-start: 20px;
+    gap: 10px;
+}
