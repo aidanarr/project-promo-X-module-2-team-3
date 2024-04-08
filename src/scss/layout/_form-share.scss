@@ -5,24 +5,21 @@
 }
 
 .comparte{
-width: 100vw;
 border: none;
 display: flex;
 flex-direction: column;
 padding: 20px;
 
 @media (width > 768px){
-    width: 50vw;
+    width: 50vw; 
 
-    .enlace1{
-        background-color: rgb(200, 195, 195);
-    }
     .btn{
         width: 181px;
         height: 30px;
         font-size: 14px;
         text-align: center;
         padding: 20px;
+        background-color: rgb(200, 195, 195);
     }
 
 }
@@ -42,7 +39,12 @@ padding: 20px;
     
     
 }
-
+.fa-sharp {
+    color:$orange,
+}
+.fa-sharp2{
+    color: white;
+}
 
 .tarjet{
     padding: 20px;
@@ -52,8 +54,7 @@ padding: 20px;
     
 }
 
-
-    .enlace1{
+ .btn{
     width: 199px;
     height: 50px;
     background-color:$orange;
@@ -61,7 +62,8 @@ padding: 20px;
     padding:20px;
     text-align: center;
     font-size:18px;
-    margin-left:px;
+    border: none;
+    
 
 }
 .enl{
