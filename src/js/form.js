@@ -1,3 +1,4 @@
+
 form.addEventListener("input", (event)=> {
     const input = event.target.id;
     const valueInput = event.target.value;
@@ -16,3 +17,6 @@ form.addEventListener("input", (event)=> {
         githubPreview.href = valueInput;
     }
 });
+
+//Sección colapsar:
+

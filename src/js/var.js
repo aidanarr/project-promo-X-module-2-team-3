@@ -5,3 +5,6 @@ const telPreview = document.querySelector(".js_tel");
 const mailPreview = document.querySelector(".js_mail");
 const linkedinPreview = document.querySelector(".js_linkedin");
 const githubPreview = document.querySelector(".js_github");
+
+//sección colapsar
+const downDesign = document.querySelector('.js_design_down');
