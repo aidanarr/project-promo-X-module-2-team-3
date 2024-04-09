@@ -22,18 +22,39 @@ form.addEventListener("input", (event)=> {
 
 downDesign.addEventListener('click', (ev)=>{
     //ev.preventDefault();
-
     colorDiv.classList.toggle('hidden');
+
+    if (downDesign.classList.contains("fa-chevron-down")){
+        downDesign.classList.remove("fa-chevron-down");
+        downDesign.classList.add("fa-chevron-up");
+    } else {
+        downDesign.classList.add("fa-chevron-down");
+    } 
 });
 
 downFill.addEventListener('click', (ev)=>{
     //ev.preventDefault();
 console.log("relleno?");
     fillDiv.classList.toggle('hidden');
+
+    if (downFill.classList.contains("fa-chevron-down")){
+        downFill.classList.remove("fa-chevron-down");
+        downFill.classList.add("fa-chevron-up");
+    } else {
+        downFill.classList.add("fa-chevron-down");
+    } 
+
 });
 
 downShare.addEventListener('click', (ev)=>{
     //ev.preventDefault();
 console.log("comparto?");
     shareDiv.classList.toggle('hidden');
+
+    if (downShare.classList.contains("fa-chevron-down")){
+        downShare.classList.remove("fa-chevron-down");
+        downShare.classList.add("fa-chevron-up");
+    } else {
+        downShare.classList.add("fa-chevron-down");
+    } 
 });
