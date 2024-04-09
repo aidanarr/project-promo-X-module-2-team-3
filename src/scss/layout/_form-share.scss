@@ -5,13 +5,14 @@
 }
 
 .comparte{
+// width: 100vw;
 border: none;
 display: flex;
 flex-direction: column;
 padding: 20px;
 
 @media (width > 768px){
-    width: 50vw; 
+    // width: 50vw;
 
     .btn{
         width: 181px;
@@ -33,6 +34,7 @@ padding: 20px;
     font-size: 15px;
     color: $metal;
     padding: 20px;
+    // width: 100vw;
     font-weight: bold;
     padding: 10px;
     
@@ -77,7 +79,7 @@ padding: 20px;
     margin-left:25px;
     font-family: var($main-font);
     color: $metal;
-    width: 100vw;
+    // width: 100vw;
     
 }
 p{
@@ -86,7 +88,7 @@ p{
     font-weight:500;
     color: $metal;
     padding: 20px;
-   
+    // width: 100vw;
     word-spacing: 5px;
 
 }

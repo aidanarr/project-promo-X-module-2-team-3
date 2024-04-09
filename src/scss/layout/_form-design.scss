@@ -7,7 +7,7 @@
 }
 
 .desing{
-    width: 100vw;
+    // width: 100vw;
     border: none;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
 
 
     @media (width > 768px){
-        width: 50vw;
+        // width: 50vw;
     }
 
 }
@@ -29,7 +29,7 @@
     padding:20px;
     font-size:15px;
     border: none;
-    width: 100vw;
+    // width: 100vw;
     font-size: 15px ;
 
 
@@ -44,7 +44,7 @@
 .tit{
     color: $metal;
     font-size: 15px;
-    margin-left: 30px;
+    // margin-left: 30px;
     font-weight: 500;
     font-size: 18px;
  
@@ -55,7 +55,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     list-style: none;
     align-items: center;
-    margin-left: 45%;
+    // margin-left: 45%;
    
 }
 .inputs{
