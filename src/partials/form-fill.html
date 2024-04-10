@@ -1,5 +1,8 @@
 <fieldset class="fill">
-    <legend class="fill__text"> <i class="fa-solid fa-keyboard fill__icon"></i> RELLENA <i class="fa-solid fa-chevron-down fill__icon--down js_fill_down"></i></legend>
+    <legend class="fill__text"> 
+        <div>
+        <i class="fa-solid fa-keyboard fill__icon"></i> RELLENA </div>
+        <i class="fa-solid fa-chevron-down fill__icon--down js_fill_down"></i></legend>
     <div class="fill__inputs js_fill_div hidden">
 
         <label for="name">Nombre completo</label>
@@ -12,8 +15,8 @@
         <legend>Imagen de perfil</legend>
         <div class="fill__inputs--image">
         <label for="image" class="label_image">Añadir imagen</label>
-        <input type="file" id="image" class="image" placeholder="Añadir imagen">
-        <div class="image__preview"></div>
+        <input type="file" id="image" class="image js__image" placeholder="Añadir imagen">
+        <div class="image__preview js_image_preview"></div>
         </div>
 
         <label for="email">Email</label>
