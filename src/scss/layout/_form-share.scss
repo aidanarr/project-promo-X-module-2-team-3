@@ -36,6 +36,9 @@ flex-direction: column;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    div {
+        width: 80%;
+    }
 
 }
 .fa-sharp {
