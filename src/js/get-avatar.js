@@ -1,9 +1,9 @@
 'use strict';
 
 const fr = new FileReader();
-const fileField = document.querySelector('.js__profile-upload-btn');
-const profileImage = document.querySelector('.js__profile-image');
-const profilePreview = document.querySelector('.js__profile-preview');
+const fileField = document.querySelector('.js__image');
+const profileImage = document.querySelector('.js_card_pic');
+const profilePreview = document.querySelector('.js_image_preview');
 
 
 /**
