@@ -69,12 +69,14 @@
         }
     }
 
-    &__pic {
-        max-height: 340px;
+     &__pic {
+        height: 240px;
         overflow: hidden;
-        img {
-            width: 100%;
-        }
+        width: 100%;
+        background-image: url("https://cdn.pixabay.com/photo/2014/09/19/21/47/chihuahua-453063_1280.jpg");
+        background-position: top;
+        background-size: contain;
+        background-repeat: no-repeat;
     } 
 
     &__socials {

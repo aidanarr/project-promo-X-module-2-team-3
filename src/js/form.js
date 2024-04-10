@@ -8,9 +8,9 @@ form.addEventListener("input", (event)=> {
     } else if (input === "position") {
         jobPreview.innerHTML = valueInput;
     } else if (input === "phone") {
-        telPreview.href = valueInput;
+        telPreview.href = "tel:" + valueInput;
     } else if (input === "email") {
-        mailPreview.href = valueInput;
+        mailPreview.href = "mailto:" + valueInput;
     } else if (input === "link") {
         linkedinPreview.href = valueInput;
     } else if (input === "gituser") {
