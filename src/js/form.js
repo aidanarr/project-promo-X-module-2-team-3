@@ -20,41 +20,49 @@ form.addEventListener("input", (event)=> {
 
 //Sección colapsar:
 
-downDesign.addEventListener('click', (ev)=>{
-    //ev.preventDefault();
-    colorDiv.classList.toggle('hidden');
-
+function arrowUpDownDesign(event) {
     if (downDesign.classList.contains("fa-chevron-down")){
         downDesign.classList.remove("fa-chevron-down");
         downDesign.classList.add("fa-chevron-up");
     } else {
         downDesign.classList.add("fa-chevron-down");
     } 
+};
+
+legendBoxDesign.addEventListener('click', (ev)=>{
+
+    colorDiv.classList.toggle('hidden');
+
+    arrowUpDownDesign(); 
 });
 
-downFill.addEventListener('click', (ev)=>{
-    //ev.preventDefault();
-console.log("relleno?");
-    fillDiv.classList.toggle('hidden');
-
+function arrowUpDownFill(event) {
     if (downFill.classList.contains("fa-chevron-down")){
         downFill.classList.remove("fa-chevron-down");
         downFill.classList.add("fa-chevron-up");
     } else {
         downFill.classList.add("fa-chevron-down");
     } 
+};
 
+legendBoxFill.addEventListener('click', (ev)=>{
+    fillDiv.classList.toggle('hidden');
+
+    arrowUpDownFill(); 
 });
 
-downShare.addEventListener('click', (ev)=>{
-    //ev.preventDefault();
-console.log("comparto?");
-    shareDiv.classList.toggle('hidden');
 
+function arrowUpDownShare(event) {
     if (downShare.classList.contains("fa-chevron-down")){
         downShare.classList.remove("fa-chevron-down");
         downShare.classList.add("fa-chevron-up");
     } else {
         downShare.classList.add("fa-chevron-down");
     } 
+};
+
+legendBoxShare.addEventListener('click', (ev)=>{
+    shareDiv.classList.toggle('hidden');
+
+    arrowUpDownShare(); 
 });

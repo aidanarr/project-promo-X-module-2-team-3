@@ -14,3 +14,7 @@ const downShare = document.querySelector('.js_share_down');
 const colorDiv = document.querySelector('.js_color_div');
 const fillDiv = document.querySelector('.js_fill_div');
 const shareDiv = document.querySelector('.js_share_div');
+
+const legendBoxDesign = document.querySelector(".js_legend_box_design");
+const legendBoxFill = document.querySelector(".js_legend_box_fill");
+const legendBoxShare = document.querySelector(".js_legend_box_share");
