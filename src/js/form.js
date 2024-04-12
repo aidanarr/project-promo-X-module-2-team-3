@@ -1,41 +1,55 @@
-form.addEventListener("input", (event) => {
-  const input = event.target.id;
-  const valueInput = event.target.value;
-  const colorName = event.target.name;
+const handleInput =(event) =>{
+        const input = event.target.id;
+        const valueInput = event.target.value;
+        const colorName = event.target.name;
+      
+        //console.log(input);
+        //console.log(valueInput);
+      
+        if (input === "name") {
+          namePreview.innerHTML = valueInput;
+          cardData.name = valueInput;
+        } else if (input === "position") {
+          jobPreview.innerHTML = valueInput;
+          cardData.job = valueInput;
+        } else if (input === "phone") {
+          telPreview.href = "tel:" + valueInput;
+          cardData.phone = valueInput;
+        } else if (input === "email") {
+          mailPreview.href = "mailto:" + valueInput;
+          cardData.email = valueInput;
+        } else if (input === "link") {
+          linkedinPreview.href = valueInput;
+          cardData.linkedin = valueInput;
+        } else if (input === "gituser") {
+          githubPreview.href = valueInput;
+          cardData.github = valueInput;
+        } else if (colorName === "colors") {
+          cardColor.classList.remove("green_text", "red_text", "blue_text");
+          socialsColor.classList.remove(
+            "green_socials",
+            "red_socials",
+            "blue_socials"
+          );
+          if (valueInput === "1") {
+            cardColor.classList.add("green_text");
+            socialsColor.classList.add("green_socials");
+            cardData.palette = valueInput;
+          } else if (valueInput === "2") {
+            cardColor.classList.add("red_text");
+            socialsColor.classList.add("red_socials");
+            cardData.palette = valueInput;
+          } else {
+            cardColor.classList.add("blue_text");
+            socialsColor.classList.add("blue_socials");
+            cardData.palette = valueInput;
+          }
+        }
+        console.log(cardData.name);
+        console.log(cardData);
+      }
 
-  console.log(valueInput);
-
-  if (input === "name") {
-    namePreview.innerHTML = valueInput;
-  } else if (input === "position") {
-    jobPreview.innerHTML = valueInput;
-  } else if (input === "phone") {
-    telPreview.href = "tel:" + valueInput;
-  } else if (input === "email") {
-    mailPreview.href = "mailto:" + valueInput;
-  } else if (input === "link") {
-    linkedinPreview.href = valueInput;
-  } else if (input === "gituser") {
-    githubPreview.href = valueInput;
-  } else if (colorName === "colors") {
-    cardColor.classList.remove("green_text", "red_text", "blue_text");
-    socialsColor.classList.remove(
-      "green_socials",
-      "red_socials",
-      "blue_socials"
-    );
-    if (valueInput === "1") {
-      cardColor.classList.add("green_text");
-      socialsColor.classList.add("green_socials");
-    } else if (valueInput === "2") {
-      cardColor.classList.add("red_text");
-      socialsColor.classList.add("red_socials");
-    } else {
-      cardColor.classList.add("blue_text");
-      socialsColor.classList.add("blue_socials");
-    }
-  }
-});
+form.addEventListener("input", handleInput);
 
 //Sección colapsar:
 

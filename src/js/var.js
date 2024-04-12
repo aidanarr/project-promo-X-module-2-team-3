@@ -1,3 +1,14 @@
+const cardData = {
+    palette:"",
+    name:"",
+    job: "",
+    phone: "",
+    email: "",
+    linkedin: "",
+    github: "",
+    photo: "",    
+}
+
 const form = document.querySelector(".js_form");
 const namePreview = document.querySelector(".js_name");
 const jobPreview = document.querySelector(".js_job");
