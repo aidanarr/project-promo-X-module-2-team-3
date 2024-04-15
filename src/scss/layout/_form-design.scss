@@ -148,6 +148,47 @@
     background-color:#a0c0cf;
 }
 
+.a4{
+    display: flex;
+    &-1{
+    background-color:#753588 ;
+    width:30px ;
+    height: 25px;
+    }
+
+    &-2{
+    background-color:#BC86CD ;
+    width:30px ;
+    height: 25px;
+    }
+
+    &-3{
+    background-color:#8AD3BD ;
+    width:30px ;
+    height: 25px;
+    }
+}
+    .a5{
+    display: flex;
+    &-1{
+    background-color:#471579 ;
+    width:30px ;
+    height: 25px;
+    }
+    
+    &-2{
+    background-color:#F7AF4A ;
+    width:30px ;
+    height: 25px;
+    }
+    
+    &-3{
+    background-color:#000000 ;
+    width:30px ;
+    height: 25px;
+    }
+}
+
 hr{
     border: none;
     height: 1px;
