@@ -204,6 +204,54 @@
                 }
             }
         }
+
+ // PURPLE
+ .purple_text {
+    border-left: solid 5px #8AD3BD;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+
+    .name {
+        font-size: 18px;
+        font-weight: bold;
+        color: #753588;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        font-weight: normal;
+        color: #BC86CD;
+    }
+}
+    .purple_socials {
+        padding-left: 20px;
+        padding-bottom: 12px;
+        padding-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        
+        .icon {
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            width: 32px;
+            height: 32px;
+            border: solid 2px #8AD3BD;
+            border-radius: 100px;
+            color: #BC86CD;
+
+            i {
+                font-size: 18px;
+                margin-top: 25%;
+            }
+
+            &:hover {
+                color: #8AD3BD;
+            }
+        }
+    }       
 }
 
 .card-boxes {
