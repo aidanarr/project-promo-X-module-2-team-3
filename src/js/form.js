@@ -49,7 +49,35 @@ const handleInput =(event) =>{
         console.log(cardData);
       }
 
+function handleClick() {
+  form.reset();
+
+  cardData.palette = "1";
+  cardData.name = "";
+  cardData.job = "";
+  cardData.phone = "";
+  cardData.email = "";
+  cardData.linkedin = "";
+  cardData.github = "";
+  cardData.photo = "";
+
+  namePreview.innerHTML = "Nombre Apellido";
+  jobPreview.innerHTML = "Front-end developer";
+  telPreview.href = "tel:";
+  mailPreview.href = "mailto:";
+  linkedinPreview.href = "";
+  githubPreview.href = "";
+  cardColor.classList.remove("green_text", "red_text", "blue_text");
+  cardColor.classList.add("green_text");
+  socialsColor.classList.remove("green_socials", "red_socials", "blue_socials");
+  socialsColor.classList.add("green_socials");
+
+  console.log(cardData);
+}
+
 form.addEventListener("input", handleInput);
+
+resetBtn.addEventListener("click", handleClick);
 
 //Sección colapsar:
 

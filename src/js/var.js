@@ -18,7 +18,8 @@ const linkedinPreview = document.querySelector(".js_linkedin");
 const githubPreview = document.querySelector(".js_github");
 const colors = document.querySelector(".colors");
 const cardColor = document.querySelector(".js_card_color");
-const socialsColor = document.querySelector(".js_socials_color")
+const socialsColor = document.querySelector(".js_socials_color");
+const resetBtn = document.querySelector(".js_reset");
 
 //sección colapsar
 const downDesign = document.querySelector('.js_design_down');
