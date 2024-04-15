@@ -20,3 +20,11 @@
 .hidden{
     display: none;
 }
+
+legend {
+    cursor: pointer;
+
+    &:hover {
+        color: $orange;
+    }
+}
