@@ -30,7 +30,9 @@ const handleInput =(event) =>{
             "green_socials",
             "red_socials",
             "blue_socials",
-            "purple_socials", "contrast_socials"
+            "purple_socials", 
+            "contrast_socials",
+            
           );
           if (valueInput === "1") {
             cardColor.classList.add("green_text");

@@ -189,11 +189,27 @@
     }
 }
 
-//.a6{
-    //Color 1: #9A9EAB
-    //Color 2: #5D35E
-    //COLOR 3 :#EC96A4
-//}
+.a6{
+    display: flex;
+    &-1{
+    background-color:#9A9EAB ;
+    width:30px ;
+    height: 25px;
+    }
+    
+    &-2{
+    background-color:#5D535E ;
+    width:30px ;
+    height: 25px;
+    }
+    
+    &-3{
+    background-color:#EC96A4 ;
+    width:30px ;
+    height: 25px;
+    }
+
+}
 
 hr{
     border: none;
