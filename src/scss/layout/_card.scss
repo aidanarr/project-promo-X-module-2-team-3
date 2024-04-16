@@ -250,7 +250,49 @@
 
   }
 
-//   CONSTRAT
+  .pink_text {
+    border-left: solid 5px #9A9EAB;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    .name {
+      font-size: 18px;
+      font-weight: bold;
+      color: #5D535E;
+    }
+    .subtitle {
+      font-size: 16px;
+      font-weight: normal;
+      color: #EC96A4;
+    }
+  }
+  .pink_socials {
+    padding-left: 20px;
+    padding-bottom: 12px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+
+    .icon {
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      width: 32px;
+      height: 32px;
+      border: solid 2px #9A9EAB;
+      border-radius: 100px;
+      color: #5D535E;
+      i {
+        font-size: 18px;
+        margin-top: 25%;
+      }
+      &:hover {
+        color: #EC96A4;
+      }
+    }
+    }
+  //   CONSTRAT
 .contrast_text {
     border-left: solid 5px #F7AF4A;
     padding-left: 20px;
@@ -285,6 +327,7 @@
       border: solid 2px #F7AF4A;
       border-radius: 100px;
       color: #471579 ;
+      
       i {
         font-size: 18px;
         margin-top: 25%;
@@ -293,24 +336,27 @@
         color: #000000;
       }
     }
-    // pink 
-    .purple_text {
-      border-left: solid 5px #8ad3bd;
+  }
+
+    // coquette
+    .coquette_text {
+      border-left: solid 5px #9473BA;
       padding-left: 20px;
       padding-right: 20px;
       margin-bottom: 10px;
       .name {
         font-size: 18px;
         font-weight: bold;
-        color: #753588;
+        color: #9473BA;
       }
       .subtitle {
         font-size: 16px;
         font-weight: normal;
-        color: #bc86cd;
+        color: #F488AB;
+        background-color: #F4CBDB;
       }
     }
-    .purple_socials {
+    .coquette_socials {
       padding-left: 20px;
       padding-bottom: 12px;
       padding-top: 10px;
@@ -324,21 +370,22 @@
         display: block;
         width: 32px;
         height: 32px;
-        border: solid 2px #8ad3bd;
+        background-color:#F4CBDB ;
+        border: solid 2px ;
         border-radius: 100px;
-        color: #bc86cd;
+        color: #F488AB ;
+        
         i {
           font-size: 18px;
           margin-top: 25%;
         }
         &:hover {
-          color: #8ad3bd;
+          color: #abd9db;
         }
       }
+    
     }
   
-  
-  }
 
   
   

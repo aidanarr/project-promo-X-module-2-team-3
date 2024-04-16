@@ -25,13 +25,13 @@ const handleInput =(event) =>{
           githubPreview.href = valueInput;
           cardData.github = valueInput;
         } else if (colorName === "colors") {
-          cardColor.classList.remove("green_text", "red_text", "blue_text", "purple_text", "contrast_text");
+          cardColor.classList.remove("green_text", "red_text", "blue_text", "purple_text", "contrast_text", "pink_text", "coquette_text" );
           socialsColor.classList.remove(
             "green_socials",
             "red_socials",
             "blue_socials",
             "purple_socials", 
-            "contrast_socials",
+            "contrast_socials", "pink_socials", "coquette_socials"
             
           );
           if (valueInput === "1") {
@@ -50,9 +50,17 @@ const handleInput =(event) =>{
             cardColor.classList.add("purple_text");
             socialsColor.classList.add("purple_socials");
             cardData.palette = valueInput;
-          } else {
+          } else if (valueInput === "5"){
             cardColor.classList.add("contrast_text");
             socialsColor.classList.add("contrast_socials");
+            cardData.palette = valueInput;
+          } else if (valueInput === "6"){ 
+            cardColor.classList.add("pink_text");
+            socialsColor.classList.add("pink_socials");
+            cardData.palette = valueInput;
+          } else{
+            cardColor.classList.add("coquette_text");
+            socialsColor.classList.add("coquette_socials");
             cardData.palette = valueInput;
           }
         }
@@ -78,9 +86,9 @@ function handleClick() {
   mailPreview.href = "mailto:";
   linkedinPreview.href = "";
   githubPreview.href = "";
-  cardColor.classList.remove("green_text", "red_text", "blue_text", "purple_text", "contrast_text");
+  cardColor.classList.remove("green_text", "red_text", "blue_text", "purple_text", "contrast_text", "pink_text", "coquette_text");
   cardColor.classList.add("green_text");
-  socialsColor.classList.remove("green_socials", "red_socials", "blue_socials", "purple_socials", "contrast_socials");
+  socialsColor.classList.remove("green_socials", "red_socials", "blue_socials", "purple_socials", "contrast_socials", "pink_text", "coquette_socials");
   socialsColor.classList.add("green_socials");
   profileImage.style.backgroundImage = `url("https://cdn.pixabay.com/photo/2014/09/19/21/47/chihuahua-453063_1280.jpg")`;
   profilePreview.style.backgroundImage = `url("https://cdn.pixabay.com/photo/2014/09/19/21/47/chihuahua-453063_1280.jpg")`;

@@ -208,6 +208,26 @@
     width:30px ;
     height: 25px;
     }
+}
+.a7{
+        display: flex;
+        &-1{
+        background-color: #F4CBDB;
+        width:30px ;
+        height: 25px;
+        }
+        
+        &-2{
+        background-color:#F488AB;
+        width:30px ;
+        height: 25px;
+        }
+        
+        &-3{
+        background-color:#9473BA ;
+        width:30px ;
+        height: 25px;
+        }
 
 }
 
