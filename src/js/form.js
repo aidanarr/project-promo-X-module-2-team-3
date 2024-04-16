@@ -102,21 +102,40 @@ resetBtn.addEventListener("click", handleClick);
 
 //Sección colapsar:
 
-function arrowUpDownDesign(event) {
+function arrowUpDown(item) {
+  if (item.classList.contains("fa-chevron-down")) {
+    item.classList.remove("fa-chevron-down");
+    item.classList.add("fa-chevron-up");
+  } else {
+    item.classList.add("fa-chevron-down");
+  }
+}
+
+legendBoxDesign.addEventListener("click", (ev) => {
+  colorDiv.classList.toggle("hidden");
+  arrowUpDown(downDesign);
+});
+
+legendBoxFill.addEventListener("click", (ev) => {
+  fillDiv.classList.toggle("hidden");
+  arrowUpDown(downFill);
+});
+
+legendBoxShare.addEventListener("click", (ev) => {
+  shareDiv.classList.toggle("hidden");
+  arrowUpDown(downShare);
+});
+
+/*function arrowUpDownDesign(event) {
   if (downDesign.classList.contains("fa-chevron-down")) {
     downDesign.classList.remove("fa-chevron-down");
     downDesign.classList.add("fa-chevron-up");
   } else {
     downDesign.classList.add("fa-chevron-down");
   }
-}
+}*/
 
-legendBoxDesign.addEventListener("click", (ev) => {
-  colorDiv.classList.toggle("hidden");
-
-  arrowUpDownDesign();
-});
-
+/*
 function arrowUpDownFill(event) {
   if (downFill.classList.contains("fa-chevron-down")) {
     downFill.classList.remove("fa-chevron-down");
@@ -131,19 +150,13 @@ legendBoxFill.addEventListener("click", (ev) => {
 
   arrowUpDownFill();
 });
+*/
 
-function arrowUpDownShare(event) {
+/*function arrowUpDownShare(event) {
   if (downShare.classList.contains("fa-chevron-down")) {
     downShare.classList.remove("fa-chevron-down");
     downShare.classList.add("fa-chevron-up");
   } else {
     downShare.classList.add("fa-chevron-down");
   }
-}
-
-legendBoxShare.addEventListener("click", (ev) => {
-  shareDiv.classList.toggle("hidden");
-
-  arrowUpDownShare();
-});
-
+}*/
