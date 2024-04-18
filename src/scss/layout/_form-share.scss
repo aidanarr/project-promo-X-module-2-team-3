@@ -10,29 +10,16 @@ border: none;
 display: flex;
 flex-direction: column;
 
-@media (width > 768px){
-    // width: 50vw;
 
-    .btn{
-        width: 181px;
-        height: 30px;
-        font-size: 14px;
-        text-align: center;
-        padding: 20px;
-        background-color: rgb(200, 195, 195);
-    }
-
-}
 
 
 }
 .share{
     font-family: var($main-font);
-    font-size: 15px;
+    font-size: 1.8rem;
     color: $metal;
     padding: 20px;
     font-weight: bold;
-    padding: 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -50,11 +37,19 @@ flex-direction: column;
 }
 
 .tarjet{
-    padding: 20px;
-    margin-left: 40px;
+    
+    
     color: white;
   
     
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #b9b3b3;
+    margin-inline-start: 20px;
+    gap: 15px;
 }
 
  .btn{
@@ -62,7 +57,6 @@ flex-direction: column;
     height: 50px;
     background-color:$orange;
     border-radius: 12px;
-    padding:20px;
     text-align: center;
     font-size:18px;
     border: none;
@@ -73,12 +67,22 @@ flex-direction: column;
     text-decoration: none;
     color: white;
     font-family: var($main-font);
+    
   
 }
+hr{
+    border: none;
+    height: 1px;
+    background-color: #b9b3b3;
+    margin-inline-start: 40px;
+    gap: 15px;
+    
+}
 .crear{
+    width: 100%;
     display:flex;
     flex-direction: column;
-    margin-left:25px;
+    align-items: center;
     font-family: var($main-font);
     color: $metal;
     // width: 100vw;
@@ -102,16 +106,18 @@ p{
     padding-bottom: 20px;
 }
 .enl3{
+    display: block;
     text-decoration: none;
-    width:250px ;
-    height: 60px;
-    font-size: 18px;
+    width:181px ;
+    height: 30px;
+    font-size: 1.4rem;
     color: white;
-    padding: 20px;
     border: none;
     background-color:#33B5FF;
-    margin-left:5%;
-    border-radius: 12px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 5px;
 }
 .enlace{
     display: flex;
@@ -133,4 +139,15 @@ hr{
     width: 70%;
     text-align: right;
     margin: auto;
+}
+
+.share_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 100%;
+    margin-top: 20px;
 }

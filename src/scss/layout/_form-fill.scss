@@ -1,8 +1,9 @@
 .fill{
     padding: 20px;
+    padding-bottom: 0;
     border: none;
     // width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 
     @media (width > 768px){
         width: 100%;
@@ -11,6 +12,7 @@
     &__text{
         font-weight: bold;
         color: $metal;
+        padding-top: 20px;
     }
     &__inputs{
     display: flex;
