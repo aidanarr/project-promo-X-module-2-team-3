@@ -19,10 +19,10 @@ const handleInput =(event) =>{
           mailPreview.href = "mailto:" + valueInput;
           cardData.email = valueInput;
         } else if (input === "link") {
-          linkedinPreview.href = valueInput;
+          linkedinPreview.href ="https://www.linkedin.com/in/"+valueInput;
           cardData.linkedin = valueInput;
         } else if (input === "gituser") {
-          githubPreview.href = valueInput;
+          githubPreview.href = "https://github.com/"+valueInput;
           cardData.github = valueInput;
         } else if (colorName === "colors") {
           cardColor.classList.remove("green_text", "red_text", "blue_text", "purple_text", "contrast_text", "pink_text", "coquette_text" );
@@ -84,8 +84,8 @@ function handleClick() {
   jobPreview.innerHTML = "Front-end developer";
   telPreview.href = "tel:";
   mailPreview.href = "mailto:";
-  linkedinPreview.href = "";
-  githubPreview.href = "";
+  linkedinPreview.href = "https://www.linkedin.com/in/";
+  githubPreview.href = "https://github.com/";
   cardColor.classList.remove("green_text", "red_text", "blue_text", "purple_text", "contrast_text", "pink_text", "coquette_text");
   cardColor.classList.add("green_text");
   socialsColor.classList.remove("green_socials", "red_socials", "blue_socials", "purple_socials", "contrast_socials", "pink_text", "coquette_socials");
