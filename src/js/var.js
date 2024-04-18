@@ -33,3 +33,5 @@ const shareDiv = document.querySelector('.js_share_div');
 const legendBoxDesign = document.querySelector(".js_legend_box_design");
 const legendBoxFill = document.querySelector(".js_legend_box_fill");
 const legendBoxShare = document.querySelector(".js_legend_box_share");
+
+const titles = document.querySelectorAll('.collapsable');
