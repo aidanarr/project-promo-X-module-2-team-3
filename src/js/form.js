@@ -127,39 +127,65 @@ resetBtn.addEventListener("click", handleClick);
 
 //Sección colapsar:
 
-function arrowUpDown(item) {
-  if (item.classList.contains("fa-chevron-down")) {
-    item.classList.remove("fa-chevron-down");
-    item.classList.add("fa-chevron-up");
+//funcion de las flechas que iba bien hasta el collapse excluyente
+// function arrowUpDown(item) {
+//   if (item.classList.contains("fa-chevron-down")) {
+//     item.classList.remove("fa-chevron-down");
+//     item.classList.add("fa-chevron-up");
+//   } else {
+//     item.classList.add("fa-chevron-down");
+//   }
+// }
+
+//funcion para que las flechas dependan de la clase de lo que escucha el evento
+function arrowUpDown2(title, arrow) {
+  if (!title.classList.contains("hidden")) {
+    arrow.classList.remove("fa-chevron-down");
+    arrow.classList.add("fa-chevron-up");
   } else {
-    item.classList.add("fa-chevron-down");
+    arrow.classList.remove("fa-chevron-up");
+    arrow.classList.add("fa-chevron-down");
   }
+}
+
+//haciendo click en la seccion designada para ello, le quitamos 'hidden' y se la añadimos a los otros dos
+//hacerlo con parametros:
+
+function collapse(open, close1, close2, arrow) {
+  if (!open.classList.contains("hidden")) {
+    close1.classList.add("hidden");
+    close2.classList.add("hidden");
+  }
+  arrowUpDown2(open, arrow);
 }
 
 // function collapse(arr){
 //     for (let i = 0; i<arr.length; i++){
+
 //         if (arr[i].classList.contains("fa-chevron-down")){
-//             //console.log("algo funciona abajo");
+
 //         }
 //     }
 // }
 
-
 legendBoxDesign.addEventListener("click", (ev) => {
   colorDiv.classList.toggle("hidden");
-  arrowUpDown(downDesign);
+  //arrowUpDown(downDesign);
 
-  collapse(titles);
+  collapse(colorDiv, fillDiv, shareDiv, downDesign);
+  //collapse(titles);
 });
 
 legendBoxFill.addEventListener("click", (ev) => {
   fillDiv.classList.toggle("hidden");
-  arrowUpDown(downFill);
+  // arrowUpDown(downFill);
+  collapse(fillDiv, colorDiv, shareDiv, downFill);
 });
 
 legendBoxShare.addEventListener("click", (ev) => {
   shareDiv.classList.toggle("hidden");
-  arrowUpDown(downShare);
+  // arrowUpDown(downShare);
+  collapse(shareDiv, fillDiv, colorDiv, downShare);
 });
 
 /*function arrowUpDownDesign(event) {
