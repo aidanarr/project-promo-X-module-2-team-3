@@ -37,3 +37,6 @@ const legendBoxShare = document.querySelector(".js_legend_box_share");
 const titles = document.querySelectorAll('.collapsable');
 
 const arrayFlechas = document.querySelectorAll(".js_array_flechas");
+
+const btnShare = document.querySelector('.js_btn_share');
+const create = document.querySelector('.js_create');

@@ -219,3 +219,7 @@ legendBoxFill.addEventListener("click", (ev) => {
     downShare.classList.add("fa-chevron-down");
   }
 }*/
+function handleClickShare(){
+  create.classList.remove('hidden');
+}
+btnShare.addEventListener('click', handleClickShare);
