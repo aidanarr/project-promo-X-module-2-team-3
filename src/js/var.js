@@ -35,3 +35,5 @@ const legendBoxFill = document.querySelector(".js_legend_box_fill");
 const legendBoxShare = document.querySelector(".js_legend_box_share");
 
 const titles = document.querySelectorAll('.collapsable');
+
+const arrayFlechas = document.querySelectorAll(".js_array_flechas");

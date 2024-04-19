@@ -121,14 +121,27 @@ resetBtn.addEventListener("click", handleClick);
 // }
 
 //funcion para que las flechas dependan de la clase de lo que escucha el evento
-function arrowUpDown2(title, arrow) {
-  if (!title.classList.contains("hidden")) {
-    arrow.classList.remove("fa-chevron-down");
-    arrow.classList.add("fa-chevron-up");
-  } else {
-    arrow.classList.remove("fa-chevron-up");
-    arrow.classList.add("fa-chevron-down");
+// function arrowUpDown2(title, arrow) {
+//   if (!title.classList.contains("hidden")) {
+//     arrow.classList.remove("fa-chevron-down");
+//     arrow.classList.add("fa-chevron-up");
+//   } else {
+//     // arrow.classList.remove("fa-chevron-up");
+//     arrow.classList.add("fa-chevron-down");
+//   }
+// }
+
+function arrowUpDown2(arrow) {
+  for (const item of arrayFlechas) {
+    if (item === arrow) {
+      item.classList.remove("fa-chevron-down");
+      item.classList.add("fa-chevron-up");
+    } else {
+      item.classList.remove("fa-chevron-up");
+      item.classList.add("fa-chevron-down");
+    }
   }
+  console.log(arrow);
 }
 
 //haciendo click en la seccion designada para ello, le quitamos 'hidden' y se la añadimos a los otros dos
@@ -139,7 +152,8 @@ function collapse(open, close1, close2, arrow) {
     close1.classList.add("hidden");
     close2.classList.add("hidden");
   }
-  arrowUpDown2(open, arrow);
+  open.classList.remove("hidden");
+  arrowUpDown2(arrow);
 }
 
 // function collapse(arr){
