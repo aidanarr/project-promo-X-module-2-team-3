@@ -1,4 +1,4 @@
-const cardData = {
+let cardData = {
     palette:"",
     name:"",
     job: "",

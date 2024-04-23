@@ -219,7 +219,34 @@ legendBoxFill.addEventListener("click", (ev) => {
     downShare.classList.add("fa-chevron-down");
   }
 }*/
+const createCard =()=>{
+  fetch('https://dev.adalab.es/api/card/',{
+    method: 'POST',
+    body: JSON.stringify(cardData),
+    headers: {
+      'content-type': 'application/json'
+    }
+  })
+  .then((response)=> response.json())
+  .then((data)=> {
+    cardData = `{
+      palette:"${data.palette}",
+      name:"${data.name},
+      job: "${data.job}",
+      phone: "${data.phone}",
+      email: "${data.email}",
+      linkedin: "${data.linkedin}",
+      github: "${data.github}",
+      photo: "${fr.result}",    
+  }`
+    console.log(cardData)
+  })
+};
+
 function handleClickShare(){
   create.classList.remove('hidden');
+  createCard();
+  
 }
+console.log(cardData);
 btnShare.addEventListener('click', handleClickShare);
