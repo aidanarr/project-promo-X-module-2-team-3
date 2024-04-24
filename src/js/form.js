@@ -265,6 +265,8 @@ const createCard =()=>{
       cardLink.href = dataResponse.cardURL;
       create.classList.remove('hidden');
       errorContainer.classList.add("hidden");
+      twitterLink.href = `https://twitter.com/intent/tweet?text=¡He%20creado%20mi%20tarjeta%20con%20Easy%20Peasy%20Cards!%20${dataResponse.cardURL}`;
+      //
     } else {
       create.classList.add('hidden');
       errorContainer.classList.remove("hidden");

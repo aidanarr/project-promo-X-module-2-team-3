@@ -47,3 +47,5 @@ const errorMsg = document.querySelector(".errormsg");
 
 const validateEmail = document.querySelector(".js_email");
 const labelEmail = document.querySelector(".js_email_label");
+
+const twitterLink = document.querySelector('.js-twitter');
