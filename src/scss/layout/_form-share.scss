@@ -114,7 +114,7 @@ p{
     font-size: 1.4rem;
     color: white;
     border: none;
-    background-color:#33B5FF;
+    background-color:black;
     border-radius: 3px;
     margin-bottom: 20px;
     text-align: center;
@@ -151,4 +151,9 @@ hr{
 .line{
     width: 100%;
     margin-top: 20px;
+}
+
+.errormsg {
+    color: $metal;
+    font-size: 1.4rem;
 }

@@ -18,6 +18,7 @@ const handleInput =(event) =>{
         } else if (input === "email") {
           mailPreview.href = "mailto:" + valueInput;
           cardData.email = valueInput;
+          
         } else if (input === "link") {
           linkedinPreview.href ="https://www.linkedin.com/in/"+valueInput;
           cardData.linkedin = valueInput;
@@ -67,6 +68,8 @@ const handleInput =(event) =>{
         console.log(cardData.name);
         console.log(cardData);
       }
+
+      validateEmail.addEventListener("blur", emailValidation);
 
 function handleClick() {
   form.reset();
@@ -219,6 +222,32 @@ legendBoxFill.addEventListener("click", (ev) => {
     downShare.classList.add("fa-chevron-down");
   }
 }*/
+
+function renderError(error) {
+  errorMsg.innerHTML = "";
+  if(error.includes("name") === true) {
+    errorMsg.innerHTML += "Falta el nombre.<br>";
+  }
+  if (error.indexOf("job") >= 0) {
+    errorMsg.innerHTML += "Falta el puesto.<br>";
+  }
+  if (error.indexOf("photo") >= 0) {
+    errorMsg.innerHTML += "Falta la imagen.<br>";
+  }
+  if (error.indexOf("email") >= 0) {
+    errorMsg.innerHTML += "Falta el email.<br>";
+  }
+  if (error.indexOf("phone") >= 0) {
+    errorMsg.innerHTML += "Falta el teléfono.<br>";
+  }
+  if (error.indexOf("linkedin") >= 0) {
+    errorMsg.innerHTML += "Falta el Linkedin.<br>";
+  }
+  if (error.indexOf("github") >= 0) {
+    errorMsg.innerHTML += "Falta el Github.<br>";
+  }
+}
+
 const createCard =()=>{
   fetch('https://dev.adalab.es/api/card/',{
     method: 'POST',
@@ -228,23 +257,27 @@ const createCard =()=>{
     }
   })
   .then((response)=> response.json())
-  .then((data)=> {
-    cardData = `{
-      palette:"${data.palette}",
-      name:"${data.name},
-      job: "${data.job}",
-      phone: "${data.phone}",
-      email: "${data.email}",
-      linkedin: "${data.linkedin}",
-      github: "${data.github}",
-      photo: "${fr.result}",    
-  }`
-    console.log(cardData)
+  .then((dataResponse) => {
+    console.log(dataResponse);
+
+    if (dataResponse.success) {
+      cardLink.innerHTML = dataResponse.cardURL;
+      cardLink.href = dataResponse.cardURL;
+      create.classList.remove('hidden');
+      errorContainer.classList.add("hidden");
+    } else {
+      create.classList.add('hidden');
+      errorContainer.classList.remove("hidden");
+      let error = dataResponse.error;
+      renderError(error);
+      
+    }
+
   })
 };
 
 function handleClickShare(){
-  create.classList.remove('hidden');
+  // create.classList.remove('hidden');
   createCard();
   
 }

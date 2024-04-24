@@ -1,5 +1,5 @@
 let cardData = {
-    palette:"",
+    palette: "1",
     name:"",
     job: "",
     phone: "",
@@ -40,3 +40,10 @@ const arrayFlechas = document.querySelectorAll(".js_array_flechas");
 
 const btnShare = document.querySelector('.js_btn_share');
 const create = document.querySelector('.js_create');
+
+const cardLink = document.querySelector(".js_cardUrl");
+const errorContainer = document.querySelector(".js_error");
+const errorMsg = document.querySelector(".errormsg");
+
+const validateEmail = document.querySelector(".js_email");
+const labelEmail = document.querySelector(".js_email_label");

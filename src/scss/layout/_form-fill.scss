@@ -83,3 +83,10 @@
     justify-content: space-between;
     width: 100%;
 }
+
+.email_class::after {
+    content: " El email no es válido.";
+    color: red;
+    font-size: 1rem;
+    padding-left: 10px;
+}
