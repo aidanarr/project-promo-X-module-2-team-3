@@ -3,9 +3,10 @@
   &__div {
     margin-top: 30px;
     margin-bottom: 30px;
-    padding-left: 40px;
+
     text-align: center;
     @media (width >= 768px) {
+        padding-left: 40px;
       text-align: left;
     }
     &--img {
