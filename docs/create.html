@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Awesome profile-cards</title>
+    <title>Easy Peasy Cards</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,12 +14,12 @@
    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <link rel="stylesheet" href="./assets/main-4bcc6be5.css">
+    <link rel="stylesheet" href="./assets/main-c5ef59ca.css">
   </head>
   <body>
     <header class="header">
 <div class="header__div">
-    <a href="index.html"><img class="header__div--img" src="./images/easy_3.png" alt="Logo Awesome profile cards" ></a>
+    <a href="index.html"><img class="header__div--img" src="./images/easy_4.png" alt="Logo Awesome profile cards" ></a>
 </div>
 </header>
 
@@ -192,8 +192,8 @@
         <div class="image__preview js_image_preview"></div>
         </div>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Ej: Sally@gmail.com">
+        <label class="js_email_label" for="email">Email</label>
+        <input class="js_email" type="email" id="email" name="email" placeholder="Ej: Sally@gmail.com">
 
         <label for="phone">Teléfono</label>
         <input type="number" id="phone" name="phone" placeholder="Ej: 555-55-55-55">
@@ -233,11 +233,18 @@
        <hr class="line">
     <p>La tarjeta ha sido creada:</p>
      
-    <a class="enl2"   href="https://awesome-profile-card.com?id=A456DF0001">"https://awesome-profile-card.com?id=A456DF0001</a>
+    <a class="enl2  js_cardUrl" href="#" target="_blank" ></a>
 
-    <a class="enl3" href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter"></i>  Compartir en Twiter </a>
+    <a class="enl3 js-twitter" href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i> Compartir en X </a>
     
     </div> 
+
+    <div class="crear js_error hidden">   
+        <hr class="line">
+     <p>Hemos detectado algunos errores:</p>
+     <p class="errormsg"></p>
+     </div> 
+ 
 
         
 </div>
@@ -250,7 +257,7 @@
 </section>
     </main>
     <footer class="footer">
-<span class="footer__copyright">Awesome profile-cards &copy;2024</span>
+<span class="footer__copyright">Easy Peasy Cards &copy;2024</span>
 <div class="footer__div">
     <img class="footer__div--logo" src="./images/logo-adalab.png" alt="Logo ADALAB">
 </div>
