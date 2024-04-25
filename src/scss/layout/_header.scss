@@ -3,14 +3,16 @@
   &__div {
     margin-top: 30px;
     margin-bottom: 30px;
-    padding-left: 40px ;
-    text-align:left;
-    &--img {
-      width: 200px;
+    padding-left: 40px;
+    text-align: center;
+    @media (width >= 768px) {
+      text-align: left;
     }
-  }
-
-  img {
-    width: 8%;
+    &--img {
+      width: 50%;
+      @media (width >= 768px) {
+        width: 8%;
+      }
+    }
   }
 }
