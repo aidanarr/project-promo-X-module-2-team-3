@@ -69,7 +69,9 @@
 }
 
 .label_image{
+    cursor: pointer;
     color: white;
+    font-size: 1.4rem;
     background: $orange;
     padding: 3px 22px 7px;
     margin-bottom: 20px;
@@ -90,3 +92,12 @@
     font-size: 1rem;
     padding-left: 10px;
 }
+
+.profile-hover{
+    cursor: default;
+
+    &:hover {
+        color: black;
+    }
+}
+
