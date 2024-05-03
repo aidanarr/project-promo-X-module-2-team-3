@@ -74,6 +74,9 @@ const handleInput =(event) =>{
 function handleClick() {
   form.reset();
 
+  btnShare.classList.remove('btn_desac');
+  btnShare.classList.add('btn');
+
   cardData.palette = "1";
   cardData.name = "";
   cardData.job = "";
@@ -246,6 +249,9 @@ function renderError(error) {
   if (error.indexOf("github") >= 0) {
     errorMsg.innerHTML += "Falta el Github.<br>";
   }
+  if (error.indexOf("ER_DATA_TOO_LONG") >= 0) {
+    errorMsg.innerHTML += "La imagen elegida no debe pesar más de 19KB.<br>";
+  }
 }
 
 const createCard =()=>{
@@ -279,6 +285,8 @@ const createCard =()=>{
 };
 
 function handleClickShare(){
+    btnShare.classList.remove('btn');
+    btnShare.classList.add('btn_desac');
   // create.classList.remove('hidden');
   createCard();
   
