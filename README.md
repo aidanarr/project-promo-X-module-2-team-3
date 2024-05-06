@@ -1,7 +1,6 @@
 ![EP](/public/images/easy_5.png)
 
 # Easy Peasy Cards
-**Tarjetas de visita fáciles y rápidas**
 
 ¡Bienvenido a Easy Peasy Cards!
 
