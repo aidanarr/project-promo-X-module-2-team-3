@@ -106,7 +106,7 @@ function handleClick() {
   socialsColor.classList.add("green_socials");
   profileImage.style.backgroundImage = `url("https://cdn.pixabay.com/photo/2014/09/19/21/47/chihuahua-453063_1280.jpg")`;
   profilePreview.style.backgroundImage = `url("https://cdn.pixabay.com/photo/2014/09/19/21/47/chihuahua-453063_1280.jpg")`;
-
+  localStorage.removeItem('card');
   console.log(cardData);
 }
 
@@ -272,7 +272,7 @@ const createCard =()=>{
       create.classList.remove('hidden');
       errorContainer.classList.add("hidden");
       twitterLink.href = `https://twitter.com/intent/tweet?text=¡He%20creado%20mi%20tarjeta%20con%20Easy%20Peasy%20Cards!%20${dataResponse.cardURL}`;
-      //
+      localStorage.setItem('card', JSON.stringify(cardData));
     } else {
       create.classList.add('hidden');
       errorContainer.classList.remove("hidden");
