@@ -1,7 +1,7 @@
 ![EP](/public/images/easy_5.png)
 
 # Easy Peasy Cards
-## Tarjetas de visita fáciles y rápidas
+**Tarjetas de visita fáciles y rápidas**
 
 ¡Bienvenido a Easy Peasy Cards!
 
@@ -17,10 +17,12 @@ Si dejas algún campo en blanco por error no serás capaz de generar la tarjeta,
 
 Y ahora, ¡presume de tarjeta! Una vez terminada, te recomendamos que la compartas en **X** utilizando el botón que se habilitará para ello.
 
-Por último, si quieres empezar de cero y crear otra tarjeta, es tan sencillo como hacer click en el botón <i class="fa-regular fa-trash-can"></i> `Reset`. De esta forma todo se borrará y podrás rellenarlo de nuevo.
+Por último, si quieres empezar de cero y crear otra tarjeta, es tan sencillo como hacer click en el botón `Reset`. De esta forma todo se borrará y podrás rellenarlo de nuevo.
 
 Y ahora, ¡a crear tarjetas!
 
 ## Tecnologías utilizadas
 
-> 
+Para la elaboración de esta web hemos utilizado **JavaScript**, **CSS** y **HTML**.
+
+Proyecto grupal del Módulo 2 de Adalab (JavaScript) del team 3, compuesto por Valentina, Pilar, Diana y Aida.
