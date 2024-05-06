@@ -14,7 +14,7 @@ Si buscabas una manera sencilla y rápida de crear tarjetas de visita personaliz
 
 Si dejas algún campo en blanco por error no serás capaz de generar la tarjeta, pero no te preocupes, en ese caso aparecerá un mensaje para ayudarte a corregirlo. ;)
 
-Y ahora, ¡presume de tarjeta! Una vez terminada, te recomendamos que la compartas en **X** utilizando el botón que se habilitará para ello.
+Y ahora, ¡presume de tarjeta! Una vez terminada, te recomendamos que la compartas en `X` utilizando el botón que se habilitará para ello.
 
 Por último, si quieres empezar de cero y crear otra tarjeta, es tan sencillo como hacer click en el botón `Reset`. De esta forma todo se borrará y podrás rellenarlo de nuevo.
 
